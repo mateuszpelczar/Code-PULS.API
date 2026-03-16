@@ -1,0 +1,22 @@
+# Visual Studio
+.vs/
+
+# Build folders
+bin/
+obj/
+
+# User files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+
+# Rider
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
