@@ -4,6 +4,7 @@ using CodePuls.API.Models.DTO;
 using CodePuls.API.Repositories.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Runtime.InteropServices;
 
 namespace CodePuls.API.Controllers
 {
@@ -111,6 +112,28 @@ namespace CodePuls.API.Controllers
                 Name = category.Name,
                 UrlHandle = category.UrlHandle
             };
+            return Ok(response);
+        }
+
+        [HttpDelete]
+        [Route("${id:Guid}")]
+        public async Task<IActionResult> DeleteCategory([FromRoute] Guid id)
+        {
+            var category = await categoryRepository.DeleteAsync(id);
+
+            if(category == null)
+            {
+                return NotFound();
+            }
+
+            // Convert Domain Model to DTO
+            var response = new CategoryDto
+            {
+                Id = category.Id,
+                Name=category.Name,
+                UrlHandle=category.UrlHandle,
+            };
+
             return Ok(response);
         }
 
