@@ -2,7 +2,7 @@
   {
     "ContainingType": "CodePuls.API.Controllers.BlogPostController",
     "Method": "CreateBlogPost",
-    "RelativePath": "api/BlogPost",
+    "RelativePath": "api/blogposts",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

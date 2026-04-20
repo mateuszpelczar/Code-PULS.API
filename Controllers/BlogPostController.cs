@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CodePuls.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/blogposts")]
     [ApiController]
     public class BlogPostController : ControllerBase
     {
