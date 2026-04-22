@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "CodePuls.API.Controllers.BlogPostController",
+    "ContainingType": "CodePuls.API.Controllers.BlogPostsController",
     "Method": "CreateBlogPost",
-    "RelativePath": "api/blogposts",
+    "RelativePath": "api/BlogPosts",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -13,6 +13,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CodePuls.API.Controllers.BlogPostsController",
+    "Method": "GetAllBlogPosts",
+    "RelativePath": "api/BlogPosts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

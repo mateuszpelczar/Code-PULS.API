@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/blogposts": {
+    "/api/BlogPosts": {
       "post": {
         "tags": [
-          "BlogPost"
+          "BlogPosts"
         ],
         "requestBody": {
           "content": {
@@ -29,6 +29,16 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "BlogPosts"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -297,7 +307,7 @@
   },
   "tags": [
     {
-      "name": "BlogPost"
+      "name": "BlogPosts"
     },
     {
       "name": "Categories"

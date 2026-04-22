@@ -24,7 +24,7 @@ namespace CodePuls.API.Repositories.Implementation
 
         public async Task<Category?> DeleteAsync(Guid id)
         {
-            //przyruwnujemy do zmiennej istniejącą kategorię, która ma takie samo id jak przekazane w parametrze
+            //przyrownujemy do zmiennej istniejącą kategorię, która ma takie samo id jak przekazane w parametrze
             var existingCategory = await dbContext.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
             if(existingCategory != null)
